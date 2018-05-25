@@ -22,12 +22,10 @@
 }
 
 @keyframes challenge {
-  0% {left: 20px; top: 20px;}
-  20% {left:500px; top: 20px;}
-  30% {left: 500px; top: 200px;transform: rotate(0deg);}
-  40% {top: 200px; left: 270px; transform: rotate(45deg);}
-  60% {left: 270px; top: 200px;transform: rotate(45deg);border: 1px dashed red;}
-  80% {left: 20px; top:200px;transform: rotate(90deg);border: 1px dashed blue;}
-  100%{}
-
-}
+  0% {left: 20px; top: 20px;border-radius: 0px; width: 75px; height: 75px;}
+  20% {left:500px; top: 20px; border-radius: 0px;width: 75px; height: 75px;}
+  30% {left: 500px; top: 200px;transform: rotate(0deg);border-radius: 0px; width: 75px; height: 75px;}
+  40% {top: 200px; left: 270px; transform: rotate(45deg);border-radius: 0px; width: 75px; height: 75px;}
+  60% {left: 270px; top: 200px;transform: rotate(45deg);border: 1px dashed red;border-radius: 0px; width: 75px; height: 75px;}
+  80% {left: 20px; top:200px;transform: rotate(90deg);border: 1px dashed blue; border-radius: 0px;width: 75px; height: 75px;}
+  100% {left:450px; top:450px;border-radius: 150px; width: 150px; height: 150px;}
