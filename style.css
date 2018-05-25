@@ -1,0 +1,33 @@
+
+#stage{
+  background-image: url(Images/css_animation_exercise_4.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+}
+
+#hero{
+  width: 75px;
+  height: 75px;
+  border: 1px dashed red;
+  position: relative;
+  padding: 0px;
+  top: 20px;
+  left: 20px;
+  animation-name: challenge;
+  animation-duration: 5s;
+
+}
+
+@keyframes challenge {
+  0% {left: 20px; top: 20px;}
+  20% {left:500px; top: 20px;}
+  30% {left: 500px; top: 200px;transform: rotate(0deg);}
+  40% {top: 200px; left: 270px; transform: rotate(45deg);}
+  60% {left: 270px; top: 200px;transform: rotate(45deg);border: 1px dashed red;}
+  80% {left: 20px; top:200px;transform: rotate(90deg);border: 1px dashed blue;}
+  100%{}
+
+}
