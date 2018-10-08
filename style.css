@@ -1,31 +1,183 @@
-
-#stage{
-  background-image: url(Images/css_animation_exercise_4.png);
-  background-repeat:no-repeat;
-  background-position: center;
-  margin: auto;
-  height: 600px;
-  width: 600px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-#hero{
+#stage {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 600px;
+  height: 600px;
+  background: #f3eded;
+  border: 1px 
+}
+
+#hero {
+  position: relative;
+  box-sizing: border-box;
   width: 75px;
   height: 75px;
-  border: 1px dashed red;
-  position: relative;
-  padding: 0px;
-  top: 20px;
   left: 20px;
-  animation-name: challenge;
-  animation-duration: 5s;
-
+  top: 20px;
+  animation: hero 20s alternate infinite;
+  -webkit-animation: hero 20s alternate infinite;
 }
 
-@keyframes challenge {
-  0% {left: 20px; top: 20px;border-radius: 0px; width: 75px; height: 75px;}
-  20% {left:500px; top: 20px; border-radius: 0px;width: 75px; height: 75px;}
-  30% {left: 500px; top: 200px;transform: rotate(0deg);border-radius: 0px; width: 75px; height: 75px;}
-  40% {top: 200px; left: 270px; transform: rotate(45deg);border-radius: 0px; width: 75px; height: 75px;}
-  60% {left: 270px; top: 200px;transform: rotate(45deg);border: 1px dashed red;border-radius: 0px; width: 75px; height: 75px;}
-  80% {left: 20px; top:200px;transform: rotate(90deg);border: 1px dashed blue; border-radius: 0px;width: 75px; height: 75px;}
-  100% {left:450px; top:450px;border-radius: 150px; width: 150px; height: 150px;}
+@keyframes hero{
+  0% {
+      left: 20px; 
+      top: 20px; 
+      transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  25% {
+      left: 500px; 
+      top: 20px; 
+      transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px;
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  50% {
+      left: 500px; 
+      top: 201px; 
+      transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  52.50% {
+      left: 270px; 
+      top: 201px; 
+      transform: rotate(45deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  62.50% {
+      left: 270px; 
+      top: 201px; 
+      transform: rotate(45deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  75% {
+      left: 20px; 
+      top: 205px; 
+      transform: rotate(90deg); 
+      border: 1px dashed rgb(6, 6, 7); 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  100% {
+      top: 442px; 
+      left: 442px; 
+      transform: rotate(90deg); 
+      border: none; 
+      border-radius: 150px; 
+      width: 150px; 
+      height: 150px; 
+      background: radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));
+  }
+}
+
+@-webkit-keyframes hero {
+  0% {
+      left: 20px; top: 20px; 
+      -webkit-transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; width: 75px; 
+      height: 75px; background: transparent;
+  }
+  
+  25% {
+      left: 500px; 
+      top: 20px; 
+      -webkit-transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  50% {
+      left: 500px; 
+      top: 201px; 
+      -webkit-transform: rotate(0deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  52.50% {
+      left: 270px; 
+      top: 201px; 
+      -webkit-transform: rotate(45deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  62.50% {
+      left: 270px; 
+      top: 201px; 
+      -webkit-transform: rotate(45deg); 
+      border: 1px dashed #FF0000; 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  75% {
+      left: 20px; 
+      top: 205px; 
+      -webkit-transform: rotate(90deg); 
+      border: 1px dashed rgb(6, 6, 7); 
+      border-radius: 0px; 
+      width: 75px; 
+      height: 75px; 
+      background: transparent;
+  }
+
+  100% {
+      bottom: 0px; 
+      right: 0px; 
+      -webkit-transform: rotate(90deg); 
+      border: none; 
+      border-radius: 150px; 
+      width: 150px; 
+      height: 150px; 
+      background: -webkit-radial-gradient(rgb(251, 218, 97), rgb(247, 107, 28));
+  }
+}
